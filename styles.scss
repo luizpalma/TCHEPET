@@ -1,0 +1,175 @@
+$orange: #ff8b00;
+$bg: #fafafa;
+$white: #fff;
+$radius: 12px;
+$shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: $bg;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: $white;
+  box-shadow: $shadow;
+
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  nav a {
+    margin: 0 12px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+
+    &.a-destaque {
+      color: $orange;
+    }
+  }
+}
+
+.hero {
+  display: flex;
+  padding: 60px 20px;
+  align-items: center;
+
+  .hero-text {
+    flex: 1;
+
+    .hero-p {
+      color: $orange;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: 44px;
+    }
+  }
+
+  .hero-img {
+    max-width: 550px;
+    border-radius: $radius;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.produtos {
+  padding: 40px 20px;
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .grid-produtos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .produto-card {
+      height: 250px;
+      border-radius: $radius;
+      background: $white;
+      box-shadow: $shadow;
+      cursor: pointer;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+.contato-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+
+  .formulario {
+    width: 45%;
+    background: $white;
+    padding: 25px;
+    border-radius: $radius;
+    box-shadow: $shadow;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .nome {
+        display: flex;
+        gap: 15px;
+      }
+
+      input,
+      textarea {
+        padding: 12px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+      }
+
+      textarea {
+        height: 100px;
+      }
+
+      .form-btn {
+        background: $orange;
+        padding: 12px;
+        font-size: inherit;
+        border: none;
+        border-radius: 8px;
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .info-contato {
+    width: 45%;
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 18px;
+
+        .icon-contato {
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          background: $orange;        
+        }
+
+      }
+    }
+  }
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}
