@@ -1,0 +1,147 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fafafa;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+.navbar .logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+.navbar nav a {
+  margin: 0 12px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar nav a.a-destaque {
+  color: #ff8b00;
+}
+
+.hero {
+  display: flex;
+  padding: 60px 20px;
+  align-items: center;
+}
+.hero .hero-text {
+  flex: 1;
+}
+.hero .hero-text .hero-p {
+  color: #ff8b00;
+  font-weight: bold;
+}
+.hero .hero-text h1 {
+  font-size: 44px;
+}
+.hero .hero-img {
+  max-width: 550px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.hero .hero-img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.produtos {
+  padding: 40px 20px;
+}
+.produtos h2 {
+  font-size: 26px;
+}
+.produtos .grid-produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.produtos .grid-produtos .produto-card {
+  height: 250px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+.produtos .grid-produtos .produto-card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.contato-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 20px;
+}
+.contato-container .formulario {
+  width: 45%;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+}
+.contato-container .formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contato-container .formulario form .nome {
+  display: flex;
+  gap: 15px;
+}
+.contato-container .formulario form input,
+.contato-container .formulario form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.contato-container .formulario form textarea {
+  height: 100px;
+}
+.contato-container .formulario form .form-btn {
+  background: #ff8b00;
+  padding: 12px;
+  font-size: inherit;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+.contato-container .info-contato {
+  width: 45%;
+}
+.contato-container .info-contato h2 {
+  margin-bottom: 30px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.contato-container .info-contato ul {
+  list-style: none;
+  padding: 0;
+}
+.contato-container .info-contato ul li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+.contato-container .info-contato ul li .icon-contato {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #ff8b00;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Petchê — Pet Shop</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">Tchêpet</div>
+    <nav>
+      <a class="a-destaque" href="#home">Home</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#contato">Contato</a>
+      <a href="#localizacao">Localização</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="hero-p">Pet Shop</p>
+      <h1>Se os animais pudessem falar,<br> eles falariam sobre nós</h1>
+    </div>
+
+    <div class="hero-img">
+      <img src="imagens/imagem-menu.jpg" alt="Imagem de cachorro">
+    </div>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <h2>Produtos</h2>
+    <div class="grid-produtos">
+      <div class="produto-card"><img src="imagens/produto1.jpg" alt="Produto 1"></div>
+      <div class="produto-card"><img src="imagens/produto2.jpg" alt="Produto 2"></div>
+      <div class="produto-card"><img src="imagens/produto3.jpg" alt="Produto 3"></div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato-container">
+    <div class="formulario">
+      <form>
+        <div class="nome">
+          <input type="text" placeholder="Primeiro nome">
+          <input type="text" placeholder="Último nome">
+        </div>
+        <input type="email" placeholder="Seu e-mail">
+        <textarea placeholder="Escreva sua mensagem"></textarea>
+        <button type="submit" class="form-btn">Enviar Mensagem</button>
+      </form>
+    </div>
+
+    <div class="info-contato">
+      <h2>Sinta-se à vontade para entrar em contato conosco</h2>
+      <ul>
+        <li><span class="icon-contato"></span>Av. Assis Brasil, 7765 - Porto Alegre</li>
+        <li><span class="icon-contato"></span>contato@petche.com.br</li>
+        <li><span class="icon-contato"></span>(51) 9 9999-9999</li>
+        <li><span class="icon-contato"></span>Seg–Sab: 10:00 – 22:00</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="localizacao">
+    <h2>Localização</h2>
+    <p>Av. Assis Brasil, 7765 - Sarandi, Porto Alegre - RS</p>
+    <div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.7661351148645!2d-51.12242492377197!3d-29.986150328576983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951976ea53b5cfbb%3A0xba5f84348e4f075b!2sFtec!5e0!3m2!1spt-BR!2sbr!4v1764024437937!5m2!1spt-BR!2sb"
+        width="100%" height="320" style="border:0;" >
+      </iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 PETCHÊ — Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
