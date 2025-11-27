@@ -17,20 +17,43 @@ body {
   background: $white;
   box-shadow: $shadow;
 
-  .logo {
-    font-size: 22px;
-    font-weight: bold;
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav a {
+      margin: 0 12px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+
+      &.a-destaque {
+        color: $orange;
+      }
+    }
+
+    .carrinho-icone {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 20px;
+   }
+
+  .carrinho-icone img {
+    width: 30px;
   }
 
-  nav a {
-    margin: 0 12px;
-    color: #333;
-    text-decoration: none;
-    font-weight: bold;
-
-    &.a-destaque {
-      color: $orange;
-    }
+  #carrinho-contador {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background: $orange;
+    color: $white;
+    font-size: 12px;
+    padding: 3px 7px;
+    border-radius: 50%;
+    font-weight: bolder;
   }
 }
 
@@ -81,13 +104,24 @@ body {
       border-radius: $radius;
       background: $white;
       box-shadow: $shadow;
-      cursor: pointer;
 
       img {
         width: 100%;
         height: 100%;
         object-fit: contain;
       }
+    }
+
+    .carrinho-add {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: $orange;
+      color: $white;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: $radius;
+      margin-top: 10px;
     }
   }
 }
@@ -173,3 +207,4 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
