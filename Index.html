@@ -15,6 +15,10 @@
       <a href="#produtos">Produtos</a>
       <a href="#contato">Contato</a>
       <a href="#localizacao">Localização</a>
+      <div class="carrinho-icone">
+        <img src="imagens/carrinho.png" alt="Carrinho">
+        <span id="carrinho-contador">0</span>
+      </div>
     </nav>
   </header>
 
@@ -23,7 +27,6 @@
       <p class="hero-p">Pet Shop</p>
       <h1>Se os animais pudessem falar,<br> eles falariam sobre nós</h1>
     </div>
-
     <div class="hero-img">
       <img src="imagens/imagem-menu.jpg" alt="Imagem de cachorro">
     </div>
@@ -32,9 +35,18 @@
   <section id="produtos" class="produtos">
     <h2>Produtos</h2>
     <div class="grid-produtos">
-      <div class="produto-card"><img src="imagens/produto1.jpg" alt="Produto 1"></div>
-      <div class="produto-card"><img src="imagens/produto2.jpg" alt="Produto 2"></div>
-      <div class="produto-card"><img src="imagens/produto3.jpg" alt="Produto 3"></div>
+      <div class="produto-card">
+        <img src="imagens/produto1.jpg" alt="Produto 1">
+        <button class="carrinho-add">Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="imagens/produto2.jpg" alt="Produto 2">
+        <button class="carrinho-add">Adicionar ao carrinho</button>
+      </div>
+      <div class="produto-card">
+        <img src="imagens/produto3.jpg" alt="Produto 3">
+        <button class="carrinho-add">Adicionar ao carrinho</button>
+      </div>
     </div>
   </section>
 
@@ -76,6 +88,6 @@
   <footer>
     <p>© 2025 PETCHÊ — Todos os direitos reservados.</p>
   </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
